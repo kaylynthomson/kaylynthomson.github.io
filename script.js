@@ -19,7 +19,7 @@ function showCart() {
     document.getElementById("cart-overlay").style.left = "50.4%";
     document.body.classList.add("noscroll");
   } else {
-    window.open("/../cart.html");
+    window.open("/../cart.html", "_self");
   }
 }
 
