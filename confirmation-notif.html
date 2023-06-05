@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesheet-aesthetic.css" />
+    <link rel="stylesheet" href="../stylesheet-layout.css" />
+    <link rel="stylesheet" href="../fonts/icofont/icofont.min.css" />
+    <script src="script.js"></script>
+    <title>Art and Music LLC</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  </head>
+
+  <body>
+        <!--desktop cart overlay-->
+        <div id="cart-overlay-div" class="desktop-only" onclick="hideCart()">
+          <iframe id="cart-overlay" src="cart-half-page-overlay.html"></iframe>
+        </div>
+    
+        <!--search overlay-->
+        <div id="search-div" onclick="hideSearch()">
+          <iframe id="search" src="search.html"></iframe>
+        </div>
+    
+        <!--menu overlay for mobile-->
+        <div id="menu-overlay">
+          <nav class="cluster">
+            <span
+              class="icon interactive"
+              id="menu-overlay-close"
+              onclick="hideMobileMenu()"
+              >&#xeee4;</span
+            >
+            <span id="nav-logo"><a href="index.html">ART & MUSIC</a></span>
+            <ul class="cluster">
+              <li>
+                <span class="icon">&#xec82;</span
+                ><span class="nav-text">SEARCH</span>
+              </li>
+              <li>
+                <span class="icon" id="nav-cart">&#xeed2;</span
+                ><span class="nav-text">CART</span>
+              </li>
+            </ul>
+          </nav>
+          <div id="menu-links">
+            <ul>
+              <li>MY ACCOUNT</li>
+              <li><a href="productlisting.html">SHOP</a></li>
+              <li>EVENTS</li>
+              <li>ART</li>
+              <li>VIDEOS</li>
+              <li>CONTACT US</li>
+            </ul>
+          </div>
+          <div id="menu-links" style="margin: 3em 0.5em 0 0">
+            <span class="icon" id="menu-guitar">&#xec9c;</span>
+          </div>
+        </div>
+    
+        <!--header and navigation-->
+        <div class="header">
+          <nav class="cluster">
+            <!--mobile/tablet only-->
+            <span class="icon interactive" id="nav-menu" onclick="showMobileMenu()"
+              >&#xefa2;</span
+            >
+            <span id="nav-logo"><a href="index.html">ART & MUSIC</a></span>
+            <ul class="cluster">
+              <li onclick="showSearch()" class="interactive">
+                <span class="icon">&#xec82;</span
+                ><span class="nav-text">SEARCH</span>
+              </li>
+              <li onclick="showCart()">
+                <span class="icon" id="nav-cart">&#xeed2;</span
+                ><span class="nav-text">CART</span>
+              </li>
+            </ul>
+          </nav>
+          <!--desktop only-->
+          <nav class="navbar">
+            <ul class="cluster navbar-links">
+              <li>MY ACCOUNT</li>
+              <li><img src="images/decorations/sparkle1.png" /></li>
+              <li><a href="productlisting.html">SHOP</a></li>
+              <li><img src="images/decorations/sparkle1.png" /></li>
+              <li>EVENTS</li>
+              <li><img src="images/decorations/sparkle1.png" /></li>
+              <li>ART</li>
+              <li><img src="images/decorations/sparkle1.png" /></li>
+              <li>VIDEOS</li>
+              <li><img src="images/decorations/sparkle1.png" /></li>
+              <li>CONTACT US</li>
+            </ul>
+          </nav>
+        </div>
+
+    <div class="confirmation">
+        <h1>PURCHASE CONFIRMED</h1>
+        <h2>Thanks for shopping!</h2>
+        <img src="../images/assets/confirmationtick.png"></img>
+        <input type="button" value="RETURN TO HOMEPAGE" onclick="window.location.href='index.html'"/>
+    </div>
+    
+    <!--add to cart overlay-->
+    <div id="addcart-div">
+      <iframe id="addcart" src="add-to-cart-notif.html"></iframe>
+    </div>
+
+    </body>

@@ -96,112 +96,109 @@
       </nav>
     </div>
 
-    <!--introduction-->
-    <div id="intro">
-      <span>
-        Oregon’s favorite instrument retailer: <wbr />run by locals, <wbr />for
-        locals.
-      </span>
-      <img src="images/decorations/woman.svg" id="intro-woman" />
-    </div>
-    <!--bestselling products-->
-    <div id="bestseller">
-      <div class="section-header">
-        <h1>BESTSELLERS</h1>
-        <img src="images/decorations/sparkles2.svg" class="sparkle" />
-      </div>
-      <!--responsive grid of products-->
-      <div class="itemgrid">
-        <div class="item">
-          <a href="/subpages/cordoba-guitar.html">
-            <img
-              src="images/products/cordoba.png"
-              class="product clickable-img interactive"
-            />
-          </a>
-          <img src="images/decorations/frame1.png" class="frame" />
-          <h3>Cordoba 3/4 Acoustic Guitar</h3>
-          <p>$300</p>
-        </div>
-        <div class="item">
-          <img
-            src="images/products/squier telecaster.png"
-            class="product clickable-img interactive"
-          />
-          <img src="images/decorations/frame2.png" class="frame" />
-          <h3>Squier Affinity Telecaster</h3>
-          <p>$260</p>
-        </div>
-        <div class="item">
-          <img
-            src="images/products/epiphone thunderbird bass.png"
-            class="product clickable-img"
-          />
-          <img src="images/decorations/frame3.png" class="frame" />
-          <h3>Epiphone Thunderbird Bass</h3>
-          <p>$400</p>
-        </div>
-        <div class="item">
-          <img
-            src="images/products/fender stratocaster.png"
-            class="product clickable-img"
-          />
-          <img src="images/decorations/frame4.png" class="frame" />
-          <h3>Fender Eric Clapton Stratocaster</h3>
-          <p>$260</p>
-        </div>
-      </div>
-    </div>
-    <!--about us + testimonial-->
-    <div id="aboutus">
-      <div class="section-header">
-        <img src="images/decorations/sparkles3.svg" class="sparkle" />
-        <h1>ABOUT US</h1>
-      </div>
+    <div class="listing-category listing-purple top-section">
+      <!--acoustic-->
       <img
-        src="images/decorations/sparkles3.svg"
-        class="sparkle desktop-only"
-        id="aboutus-sparkle-1"
-      />
-      <div id="owners">
-        <img src="images/assets/aboutus.png" class="desktop-only" />
-        <p>
-          Art & Music LLC is a unique store based in Redmond, Oregon with art
-          supplies, fine art, as well as new and used instruments. Our hope is
-          to inspire artists and musicians both young and old. Drop by our
-          store—we look forward to meeting you and hearing about your art!
-          <br />
-          <br />
-          — Kepi and Terry
-        </p>
-      </div>
-      <img
-        src="images/decorations/sparkles3.svg"
+        src="images/decorations/sparkle1.png"
         class="sparkle"
         id="aboutus-sparkle-2"
       />
-      <div class="itemgrid">
-        <img src="images/assets/testim.png" class="testimonial" />
-        <img src="images/assets/testim2.png" class="testimonial" />
-        <img src="images/assets/testim3.png" class="testimonial" />
+      <img
+        src="images/products/cordoba.png"
+        class="product"
+        id="listing-acoustic"
+      />
+      <h1>ACOUSTIC GUITARS</h1>
+      <div class="listing-button">
+        <input
+          type="button"
+          value="BROWSE"
+          id="acoustic-button"
+          class="interactive"
+          onclick="window.location.href='/subpages/acoustic.html'"
+        />
       </div>
       <img
-        src="images/decorations/sparkles3.svg"
+        src="images/decorations/sparkle1.png"
         class="sparkle"
-        id="aboutus-sparkle-3"
+        id="aboutus-sparkle-2"
+        style="left: 7.5%"
       />
     </div>
-    <!--contact form-->
-    <div id="contactus">
-      <div class="section-header">
-        <h1>CONTACT US</h1>
+
+    <div class="listing-category listing-white">
+      <!--electric-->
+      <img
+        src="images/decorations/sparkle2.png"
+        class="sparkle"
+        id="aboutus-sparkle-2"
+        style="left: 26%"
+      />
+      <img
+        src="images/products/fender stratocaster.png"
+        class="product"
+        id="listing-electric"
+      />
+      <h1>ELECTRIC GUITARS</h1>
+      <img
+        src="images/decorations/sparkle2.png"
+        class="sparkle"
+        id="aboutus-sparkle-2"
+        style="left: 70%"
+      />
+      <div class="listing-button">
+        <input type="button" value="BROWSE" />
       </div>
-      <input type="text" placeholder="Name" />
-      <input type="text" placeholder="Email" />
-      <br />
-      <textarea rows="15" cols="100" placeholder="Message"></textarea>
-      <br />
-      <input type="button" value="SUBMIT" />
+    </div>
+
+    <div class="listing-category listing-purple">
+      <img
+        src="images/decorations/sparkle1.png"
+        class="sparkle desktop-only"
+        id="aboutus-sparkle-1"
+        style="left: 30%"
+      />
+
+      <!--bass-->
+      <img
+        src="images/products/epiphone thunderbird bass.png"
+        class="product"
+        id="listing-bass"
+      />
+      <h1>BASS GUITARS</h1>
+      <div class="listing-button">
+        <input type="button" value="BROWSE" />
+      </div>
+      <img
+        src="images/decorations/sparkle1.png"
+        class="sparkle"
+        id="aboutus-sparkle-2"
+        style="left: 15%"
+      />
+    </div>
+
+    <div class="listing-category listing-white">
+      <!--accessories-->
+      <img
+        src="images/decorations/sparkle2.png"
+        class="sparkle"
+        id="aboutus-sparkle-2"
+      />
+      <img
+        src="images/products/marshallamp.png"
+        class="product"
+        id="listing-accessories"
+      />
+      <h1>ACCESSORIES</h1>
+      <div class="listing-button">
+        <input type="button" value="BROWSE" />
+      </div>
+      <img
+        src="images/decorations/sparkle2.png"
+        class="sparkle"
+        id="aboutus-sparkle-2"
+        style="left: 70%"
+      />
     </div>
 
     <!--add to cart overlay-->

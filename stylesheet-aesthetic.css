@@ -1,0 +1,766 @@
+/* CODE START */
+
+:root {
+  /* colours */
+  --off-white: #f2f6f8;
+  --purple: #4f2cca;
+  --pink: #d136dc;
+  --light-pink: #fbbcff;
+  --light-purple: #9c84f1;
+  --ink-blue: #020015;
+  --gray: #e6e6e6;
+  --shadow: rgba(0, 0, 0, 0.4);
+
+  /* font sizes */
+  --header-size: 3em;
+  --header-icon: 2.3em;
+  --header-size-mobile: 2.25em;
+  --header-icon-mobile: 2em;
+  --navbar-size: 1.5em;
+}
+
+body {
+  background-color: var(--off-white);
+}
+
+/* importing fonts */
+@font-face {
+  font-family: "Syne";
+  src: url("fonts/Syne-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Italic-VariableFont_wght.tff") format("truetype");
+  font-style: italic;
+}
+
+/* GENERAL */
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 2.5em;
+  color: var(--purple);
+}
+
+h2 {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7em;
+  color: var(--pink);
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+h5 {
+  font-family: "Raleway", sans-serif;
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+p {
+  font-family: "Syne";
+  color: var(--purple);
+  font-size: 1.1em;
+}
+
+li,
+b {
+  font-family: "Raleway", sans-serif;
+}
+
+input[type="button"],
+button {
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+input {
+  border-radius: 5px;
+  background-color: #e8e8e8;
+  box-shadow: inset 0px 2px 2px var(--shadow);
+  padding: 0.5em;
+}
+
+.interactive:hover {
+  cursor: pointer;
+}
+
+/* HEADER AND NAVBAR */
+.header {
+  background-color: var(--off-white);
+  box-shadow: 0px 4px 4px var(--shadow);
+  line-height: 1.5;
+}
+#nav-logo a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: var(--header-size);
+  color: var(--pink);
+  transition: color 0.2s;
+}
+
+#nav-logo a:hover {
+  color: var(--purple);
+  transition: color 0.2s;
+}
+
+.icon {
+  font-family: "Icofont";
+  color: var(--purple);
+  font-size: var(--header-icon);
+}
+
+#nav-cart {
+  font-size: var(--header-size);
+  cursor: pointer;
+}
+
+.nav-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: var(--navbar-size);
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: var(--pink);
+  color: var(--off-white);
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: var(--navbar-size);
+}
+
+.navbar-links img {
+  width: 1em;
+}
+
+.navbar-links a {
+  color: var(--off-white);
+}
+
+.navbar-links a:hover {
+  color: var(--light-pink);
+  transition: 0.3s;
+}
+
+#nav-menu:hover {
+  cursor: pointer;
+}
+
+/* MOBILE MENU OVERLAY */
+#menu-overlay {
+  background-image: linear-gradient(#4f2cca, #9c84f1);
+}
+
+#menu-overlay .icon,
+#menu-overlay .nav-text,
+#menu-overlay a,
+#menu-overlay a:hover {
+  color: white;
+}
+
+#menu-overlay > .cluster > span .icon {
+  font-size: var(--header-size-mobile);
+}
+#menu-links ul {
+  list-style-type: none;
+  text-align: center;
+  color: white;
+  font-size: 2.25em;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+}
+
+#menu-guitar {
+  font-size: 7.5em;
+}
+
+#menu-overlay-close:hover {
+  cursor: pointer;
+}
+
+#menu-links a {
+  color: white;
+  transition: 0.25s;
+}
+
+#menu-links a:hover {
+  color: var(--light-purple);
+}
+
+/* INTRODUCTION */
+.section-header {
+  font-family: "Raleway", sans-serif;
+}
+
+#intro {
+  background-color: var(--purple);
+  text-align: right;
+  box-shadow: 0px 4px 4px var(--shadow);
+}
+
+#intro span {
+  font-family: "Syne", sans-serif;
+  color: var(--off-white);
+  font-size: 2.15em;
+}
+
+#intro-woman {
+  width: 30em;
+}
+
+/* BESTSELLER */
+#bestseller {
+  background-color: var(--off-white);
+  box-shadow: 0px 4px 4px var(--shadow);
+}
+
+.sparkle {
+  height: 2em;
+}
+
+.item {
+  width: 20%;
+  text-align: center;
+}
+
+.item p {
+  font-family: "Syne", sans-serif;
+  color: var(--pink);
+  font-weight: bold;
+}
+
+.product {
+  filter: drop-shadow(0 4px 4px var(--shadow));
+  max-height: 35em;
+  height: auto;
+}
+
+.frame {
+  max-height: 30em;
+  height: auto;
+}
+
+.clickable-img:hover {
+  filter: drop-shadow(0 8px 4px var(--shadow));
+}
+
+/* ABOUT + TESTIMONIAL */
+#aboutus {
+  background-image: linear-gradient(#4f2cca, #9c84f1);
+  box-shadow: 0px 4px 4px var(--shadow);
+}
+
+#aboutus h1 {
+  color: var(--off-white);
+}
+
+#owners img {
+  height: 30em;
+}
+
+#owners p {
+  color: var(--off-white);
+  font-size: var(--navbar-size);
+  text-align: center;
+}
+
+.testimonial {
+  width: 15em;
+}
+
+/* CONTACT US */
+
+#contactus {
+  text-align: center;
+}
+
+input[type="text"],
+textarea {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--navbar-size);
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 0px 2px 4px var(--shadow);
+  padding: 10px;
+}
+
+input[type="button"] {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--navbar-size);
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--pink);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  box-shadow: none;
+}
+
+#contactus textarea {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--navbar-size);
+}
+
+/* FOOTER */
+footer {
+  padding: 1em 3em;
+}
+
+footer > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+  color: var(--pink);
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.breadcrumb li {
+  display: inline;
+  font-size: 1.3em;
+}
+
+.breadcrumb li + li:before {
+  padding: 8px;
+  color: var(--purple);
+  content: ">\00a0";
+}
+
+.breadcrumb li a {
+  color: var(--purple);
+  transition: 0.3s;
+}
+
+.breadcrumb li a:hover {
+  color: var(--pink);
+  transition: 0.3s;
+}
+
+/* PRODUCT LISTING */
+.listing-category {
+  text-align: center;
+  background-color: var(--off-white);
+  box-shadow: 0px 4px 4px var(--shadow);
+}
+.listing-category .product {
+  height: 30em;
+}
+.listing-purple {
+  background-color: var(--purple);
+}
+
+.listing-purple h1 {
+  color: #ffffff;
+}
+.listing-purple p {
+  color: #ffffff;
+  font-size: var(--navbar-size);
+}
+.listing-purple input[type="button"] {
+  color: var(--purple);
+  background-color: var(--off-white);
+}
+#acoustic-button:hover {
+  color: var(--pink);
+}
+
+.listing-white {
+  background-color: var(--off-white);
+}
+
+#listing-acoustic {
+  left: 10%;
+  top: 8em;
+  transform: rotate(-25deg);
+}
+#listing-electric {
+  left: 80%;
+  top: 25em;
+  transform: rotate(25deg);
+}
+#listing-bass {
+  left: 15%;
+  top: 50em;
+  transform: rotate(-45deg);
+}
+#listing-accessories {
+  left: 77.5%;
+  top: 89em;
+  height: 15em;
+}
+
+/* ACOUSTIC CATEGORY */
+#acoustic-itemgrid .itemgrid {
+  background-color: var(--off-white);
+}
+
+#acoustic-header {
+  background-color: var(--off-white);
+  display: block;
+  align-items: center;
+}
+
+.section-header select,
+option {
+  width: 11em;
+  height: 2.5em;
+  border: var(--purple) 3px;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: var(--off-white);
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--purple);
+}
+
+#acoustic-header select {
+  position: relative;
+  top: 5px;
+  float: right;
+}
+
+#acoustic-button:hover {
+  color: var(--pink);
+}
+
+.buyable:hover {
+  background-color: var(--purple);
+}
+
+/* PRODUCT PAGE */
+
+hr.purple {
+  border: 1px solid var(--purple);
+}
+
+.product-images {
+  border: 3px solid var(--purple);
+  border-radius: 5px;
+}
+
+.large-image {
+  border-radius: 5px;
+}
+
+.small-image {
+  border: 3px solid var(--purple);
+  border-radius: 5px;
+}
+
+.product-specifications li {
+  font-family: "Syne";
+  color: var(--purple);
+  font-size: 1.1em;
+}
+.product-add-to-cart input {
+  width: 100%;
+}
+
+.product-add-to-cart input[type="button"]:hover {
+  background-color: var(--purple);
+}
+
+/* CART */
+.page-container {
+  background-color: var(--off-white);
+}
+
+.cart-breadcrumb {
+  color: var(--purple);
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.cart-breadcrumb li {
+  display: inline-block;
+  font-size: 1.3em;
+}
+
+.cart-breadcrumb li + li:before {
+  padding: 8px;
+  color: var(--purple);
+  content: ">\00a0";
+}
+
+.cart-breadcrumb li a {
+  color: var(--pink);
+  transition: 0.3s;
+}
+
+.product-checkout input[type="button"] {
+  background-color: var(--purple);
+}
+
+.product-checkout input[type="button"]:hover {
+  background-color: var(--pink);
+}
+
+.right-side {
+  background-color: var(--gray);
+}
+
+.right-side1 {
+  background-color: var(--gray);
+}
+
+.cart-product-white-box {
+  background-color: var(--off-white);
+  border-radius: 5px;
+}
+
+.quantity input[type="button"] {
+  text-align: center;
+  width: 2.5em;
+}
+.quantity input[type="text"] {
+  text-align: center;
+  width: 2.5em;
+}
+
+/* CONFIRMATION PAGE */
+
+.confirmation input[type="button"] {
+  background-color: var(--purple);
+  width: 25%;
+  padding: 1%;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--purple);
+  color: var(--off-white);
+}
+
+.footer-col .icon {
+  color: var(--off-white);
+}
+
+.footer-col ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-col h4 {
+  font-family: "Syne", sans-serif;
+  color: #ffffff;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 960px) {
+  /*PRODUCT LISTING*/
+  .listing-category .product {
+    height: 20em;
+  }
+  #listing-acoustic {
+    top: 15em;
+  }
+  #listing-electric {
+    top: 40em;
+  }
+  #listing-bass {
+    top: 65em;
+  }
+  #listing-accessories {
+    top: 95.6em;
+    height: 7.5em;
+  }
+  /* ACOUSTIC CATEGORY */
+  .item h3 {
+    font-size: 1.25em;
+  }
+  .item input[type="button"] {
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  #listing-accessories {
+    top: 92.6em;
+  }
+}
+
+/* MOBILE ONLY BREAKPOINT GOES HERE */
+@media only screen and (max-width: 600px) {
+  #nav-logo a {
+    font-size: var(--header-size-mobile);
+  }
+  .icon {
+    font-size: var(--header-icon-mobile);
+  }
+  #nav-cart {
+    font-size: var(--header-size-mobile);
+  }
+
+  #intro span {
+    font-size: 1.75em;
+  }
+
+  #intro-woman {
+    width: 20em;
+  }
+  .item {
+    width: 40%;
+    text-align: left;
+  }
+
+  .product {
+    max-height: 25em;
+  }
+
+  /*PRODUCT LISTING*/
+
+  .listing-category .product {
+    height: 12.5em;
+  }
+
+  #listing-acoustic {
+    top: 11em;
+    transform: rotate(-45deg);
+  }
+  #listing-electric {
+    left: 15%;
+    top: 28em;
+    transform: rotate(45deg);
+  }
+  #listing-bass {
+    top: 43em;
+  }
+  #listing-accessories {
+    left: 10%;
+    top: 62em;
+    height: 5em;
+  }
+
+  #owners p {
+    font-size: 1.25em;
+    text-align: left;
+  }
+
+  .testimonial {
+    width: 10em;
+  }
+
+  footer {
+    padding: 1em;
+  }
+
+  .cart-footer h3 {
+    color: var(--off-white);
+    font-size: 1.8em;
+  }
+
+  .product-checkout input[type="button"] {
+    background-color: var(--off-white);
+    color: var(--purple);
+  }
+
+  .cart-header-box h1 {
+    text-align: right;
+  }
+
+  .fields h5 {
+    text-align: center;
+  }
+
+  .fields-marked h5 {
+    text-align: center;
+  }
+
+  .slide-left input[type="button"] {
+    color: var(--purple);
+    font-size: 3em;
+    min-width: 5%;
+    background-color: var(--off-white);
+  }
+
+  .slide-right input[type="button"] {
+    color: var(--purple);
+    font-size: 3em;
+    min-width: 5%;
+    background-color: var(--off-white);
+  }
+
+  /*ACOUSTIC CATEGORY*/
+  #acoustic-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-header select,
+  option {
+    width: 100%;
+    margin: 1em 0;
+    height: 2.5em;
+    border: var(--purple) 3px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: var(--off-white);
+    font-family: "Raleway", sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: var(--purple);
+  }
+
+  option {
+    font-size: 1em;
+  }
+
+  /* PAYMENT PAGE */
+  .gift-card-box input[type="button"] {
+    background-color: var(--purple);
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  /* PRODUCT LISTING */
+
+  #listing-acoustic {
+    top: 15em;
+  }
+  #listing-electric {
+    left: 15%;
+    top: 35em;
+  }
+  #listing-bass {
+    top: 50em;
+  }
+  #listing-accessories {
+    top: 68em;
+  }
+}

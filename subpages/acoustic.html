@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/../stylesheet-aesthetic.css" />
+    <link rel="stylesheet" href="/../stylesheet-layout.css" />
+    <link rel="stylesheet" href="/../fonts/icofont/icofont.min.css" />
+    <script src="/../script.js"></script>
+    <title>Art and Music LLC</title>
+    <link rel="icon" type="image/x-icon" href="/../favicon.ico" />
+  </head>
+
+  <body>
+    <!--desktop cart overlay-->
+    <div id="cart-overlay-div" class="desktop-only" onclick="hideCart()">
+      <iframe id="cart-overlay" src="/../cart-half-page-overlay.html"></iframe>
+    </div>
+
+    <!--search overlay-->
+    <div id="search-div" onclick="hideSearch()">
+      <iframe id="search" src="/../search.html"></iframe>
+    </div>
+
+    <!--menu overlay for mobile-->
+    <div id="menu-overlay">
+      <nav class="cluster">
+        <span
+          class="icon interactive"
+          id="menu-overlay-close"
+          onclick="hideMobileMenu()"
+          >&#xeee4;</span
+        >
+        <span id="nav-logo"><a href="/../index.html">ART & MUSIC</a></span>
+        <ul class="cluster">
+          <li>
+            <span class="icon">&#xec82;</span
+            ><span class="nav-text">SEARCH</span>
+          </li>
+          <li>
+            <span class="icon" id="nav-cart">&#xeed2;</span
+            ><span class="nav-text">CART</span>
+          </li>
+        </ul>
+      </nav>
+      <div id="menu-links">
+        <ul>
+          <li>MY ACCOUNT</li>
+          <li><a href="/../productlisting.html">SHOP</a></li>
+          <li>EVENTS</li>
+          <li>ART</li>
+          <li>VIDEOS</li>
+          <li>CONTACT US</li>
+        </ul>
+      </div>
+      <div id="menu-links" style="margin: 3em 0.5em 0 0">
+        <span class="icon" id="menu-guitar">&#xec9c;</span>
+      </div>
+    </div>
+
+    <!--header and navigation-->
+    <div class="header">
+      <nav class="cluster">
+        <!--mobile/tablet only-->
+        <span class="icon interactive" id="nav-menu" onclick="showMobileMenu()"
+          >&#xefa2;</span
+        >
+        <span id="nav-logo"><a href="/../index.html">ART & MUSIC</a></span>
+        <ul class="cluster">
+          <li onclick="showSearch()" class="interactive">
+            <span class="icon">&#xec82;</span
+            ><span class="nav-text">SEARCH</span>
+          </li>
+          <li onclick="showCart()">
+            <span class="icon" id="nav-cart">&#xeed2;</span
+            ><span class="nav-text">CART</span>
+          </li>
+        </ul>
+      </nav>
+      <!--desktop only-->
+      <nav class="navbar">
+        <ul class="cluster navbar-links">
+          <li>MY ACCOUNT</li>
+          <li><img src="/../images/decorations/sparkle1.png" /></li>
+          <li><a href="/../productlisting.html">SHOP</a></li>
+          <li><img src="/../images/decorations/sparkle1.png" /></li>
+          <li>EVENTS</li>
+          <li><img src="/../images/decorations/sparkle1.png" /></li>
+          <li>ART</li>
+          <li><img src="/../images/decorations/sparkle1.png" /></li>
+          <li>VIDEOS</li>
+          <li><img src="/../images/decorations/sparkle1.png" /></li>
+          <li>CONTACT US</li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--breadcrumb-->
+    <div class="product-margin mobile-only"></div>
+    <div class="cart-header-box mobile-only">
+      <h2
+        class="interactive"
+        onclick="window.location.href='/../productlisting.html'"
+      >
+        &lt SHOP
+      </h2>
+    </div>
+
+    <div
+      class="listing-category listing-purple top-section"
+      id="acoustic-listing"
+    >
+      <!--acoustic-->
+      <img
+        src="/../images/decorations/sparkle1.png"
+        class="sparkle"
+        id="aboutus-sparkle-2"
+        style="left: auto; right: 80%"
+      />
+      <h1>ACOUSTIC GUITARS</h1>
+      <p>
+        Our selection of acoustic guitars includes new and used models from
+        well-known product lines.
+      </p>
+      <img
+        src="/../images/decorations/sparkle1.png"
+        class="sparkle"
+        id="aboutus-sparkle-2"
+        style="left: 80%"
+      />
+    </div>
+    <!--product grid-->
+    <div class="section-header" id="acoustic-header">
+      <h1 style="color: var(--pink)">ALL PRODUCTS</h1>
+      <select>
+        <option value="1" selected="selected" hidden>SORT BY</option>
+        <option value="2">Price (ascending)</option>
+        <option value="3">Price (descending)</option>
+        <option value="4">Name (A-Z)</option>
+        <option value="5">Name (Z-A)</option>
+      </select>
+    </div>
+    <div id="acoustic-itemgrid">
+      <div class="itemgrid">
+        <div class="item">
+          <a href="cordoba-guitar.html">
+            <img
+              src="/../images/products/cordoba.png"
+              class="product clickable-img interactive"
+            />
+          </a>
+          <img src="/../images/decorations/frame1.png" class="frame" />
+          <br />
+          <a href="cordoba-guitar.html"><h3>Cordoba 3/4 Acoustic Guitar</h3></a>
+          <p>$300</p>
+          <br />
+          <input
+            type="button"
+            value="ADD TO CART"
+            class="interactive buyable"
+            onclick="showNotif()"
+          />
+        </div>
+        <div class="item">
+          <a href="taylor-guitar.html">
+            <img
+              src="/../images/products/taylor.png"
+              class="product clickable-img interactive"
+            />
+          </a>
+          <img src="/../images/decorations/frame2.png" class="frame" />
+          <br />
+          <a href="taylor-guitar.html"
+            ><h3>Taylor 312ce Grand Concert V-Class</h3></a
+          >
+          <p>$1700</p>
+          <br />
+          <input
+            type="button"
+            value="ADD TO CART"
+            class="interactive buyable"
+            onclick="showNotif()"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="/../images/products/gibson dove hardcase.png"
+            class="product clickable-img"
+          />
+          <img src="/../images/decorations/frame3.png" class="frame" />
+          <br />
+          <h3>Gibson Dove w/ Hardcase</h3>
+          <p>$3500</p>
+          <br />
+          <input type="button" value="ADD TO CART" />
+        </div>
+        <div class="item">
+          <img
+            src="/../images/products/nashville 10ce.png"
+            class="product clickable-img"
+          />
+          <img src="/../images/decorations/frame4.png" class="frame" />
+          <br />
+          <h3>Nashville Acoustic OM 10ce</h3>
+          <p>$220</p>
+          <br />
+          <input type="button" value="ADD TO CART" />
+        </div>
+        <div class="item">
+          <img
+            src="/../images/products/breedlove.png"
+            class="product clickable-img"
+          />
+          <img src="/../images/decorations/frame1.png" class="frame" />
+          <br />
+          <h3>Breedlove Artista Pro Concerto</h3>
+          <p>$700</p>
+          <br />
+          <input type="button" value="ADD TO CART" />
+        </div>
+        <div class="item">
+          <img
+            src="/../images/products/cordoba.png"
+            class="product clickable-img"
+          />
+          <img src="/../images/decorations/frame2.png" class="frame" />
+          <br />
+          <h3>Ed Fritz Custom Guitar</h3>
+          <p>$1200</p>
+          <br />
+          <input type="button" value="ADD TO CART" />
+        </div>
+        <div class="item">
+          <img
+            src="/../images/products/seagull 12 string.png"
+            class="product clickable-img"
+          />
+          <img src="/../images/decorations/frame3.png" class="frame" />
+          <br />
+          <h3>Seagull 12-String Acoustic</h3>
+          <p>$350</p>
+          <br />
+          <input type="button" value="ADD TO CART" />
+        </div>
+        <div class="item">
+          <img
+            src="/../images/products/nashville 10eb.png"
+            class="product clickable-img"
+          />
+          <img src="/../images/decorations/frame4.png" class="frame" />
+          <br />
+          <h3>Nashville Acoustic OM 1oeb</h3>
+          <p>$220</p>
+          <br />
+          <input type="button" value="ADD TO CART" />
+        </div>
+      </div>
+    </div>
+
+    <!--add to cart overlay-->
+    <div id="addcart-div">
+      <iframe id="addcart" src="add-to-cart-notif.html"></iframe>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <div class="footer-div">
+        <!--DESKTOP FOOTERS-->
+        <div class="footer-col desktop-only">
+          <ul>
+            <li><h4>Information</h4></li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+
+        <div class="footer-col desktop-only" style="text-align: center">
+          <ul>
+            <li><h4>Visit Us</h4></li>
+            <li>232 SW 5th Street, Redmond OR</li>
+          </ul>
+          <br />
+          <h4>Contact Us</h4>
+          <span class="icon">&#xef12;</span>
+          <span class="icon">&#xed37;</span>
+          <span class="icon">&#xefbb;</span>
+        </div>
+
+        <div class="footer-col desktop-only" style="text-align: right">
+          <ul>
+            <li><h4>Store Hours</h4></li>
+            <li>Tue - Fri: 10am to 6pm</li>
+            <li>Sat: 10 am to 5pm</li>
+            <li>Sun - Mon: Closed</li>
+          </ul>
+        </div>
+
+        <!--MOBILE FOOTERS-->
+        <div class="footer-col mobile-only">
+          <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>FAQ</li>
+          </ul>
+          <br />
+          <h4>Contact Us</h4>
+          <span class="icon">&#xef12;</span>
+          <span class="icon">&#xed37;</span>
+          <span class="icon">&#xefbb;</span>
+        </div>
+        <div class="footer-col mobile-only" style="text-align: right">
+          <ul>
+            <li><h4>Store Hours</h4></li>
+            <li>Tue - Fri: 10am to 6pm</li>
+            <li>Sat: 10 am to 5pm</li>
+            <li>Sun - Mon: Closed</li>
+            <br />
+            <li>232 SW 5th Street</li>
+            <li>Redmond OR</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+List of changes from Assignment 2 prototype:
+- Weight of logo icon (doesn't render correctly for some reason)
+- Padding between header elements (to improve composition and take up less space)
+- Simplified testimonial section (to be more visually consistent with mobile section and remove redundant info)
+- Remove distracting sparkles
+- minor changes to footer for more clarity
+- shortened length of ssubmit button
+- removed collapse feature and key details (might've been redundant to include) in product page 
+- changed colours of mobile version of cart page to match the desktop version more
+- added a line border between products in cart page mobile to match desktop and to allow users to distinguish different products easily
+- removed the x (Remove element) in items on a cart as users can easily remove items through - + and text field
+- removed sparkles on mobile product listing page to provide sufficient negative space
+- alignment of "add to cart" button on acoustic page
+- merged category description into the header on acoustic page
+- changed aesthetic of "sort by" button

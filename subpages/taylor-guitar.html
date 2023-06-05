@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesheet-aesthetic.css" />
+    <link rel="stylesheet" href="../stylesheet-layout.css" />
+    <link rel="stylesheet" href="../fonts/icofont/icofont.min.css" />
+    <script src="/../script.js"></script>
+    <title>Art and Music LLC</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  </head>
+
+  <body>
+      <!--desktop cart overlay-->
+      <div id="cart-overlay-div" class="desktop-only" onclick="hideCart()">
+        <iframe id="cart-overlay" src="/../cart-half-page-overlay.html"></iframe>
+      </div>
+  
+      <!--search overlay-->
+      <div id="search-div" onclick="hideSearch()">
+        <iframe id="search" src="/../search.html"></iframe>
+      </div>
+  
+      <!--menu overlay for mobile-->
+      <div id="menu-overlay">
+        <nav class="cluster">
+          <span
+            class="icon interactive"
+            id="menu-overlay-close"
+            onclick="hideMobileMenu()"
+            >&#xeee4;</span
+          >
+          <span id="nav-logo"><a href="/../index.html">ART & MUSIC</a></span>
+          <ul class="cluster">
+            <li>
+              <span class="icon">&#xec82;</span
+              ><span class="nav-text">SEARCH</span>
+            </li>
+            <li>
+              <span class="icon" id="nav-cart">&#xeed2;</span
+              ><span class="nav-text">CART</span>
+            </li>
+          </ul>
+        </nav>
+        <div id="menu-links">
+          <ul>
+            <li>MY ACCOUNT</li>
+            <li><a href="/../productlisting.html">SHOP</a></li>
+            <li>EVENTS</li>
+            <li>ART</li>
+            <li>VIDEOS</li>
+            <li>CONTACT US</li>
+          </ul>
+        </div>
+        <div id="menu-links" style="margin: 3em 0.5em 0 0">
+          <span class="icon" id="menu-guitar">&#xec9c;</span>
+        </div>
+      </div>
+  
+      <!--header and navigation-->
+      <div class="header">
+        <nav class="cluster">
+          <!--mobile/tablet only-->
+          <span class="icon interactive" id="nav-menu" onclick="showMobileMenu()"
+            >&#xefa2;</span
+          >
+          <span id="nav-logo"><a href="/../index.html">ART & MUSIC</a></span>
+          <ul class="cluster">
+            <li onclick="showSearch()" class="interactive">
+              <span class="icon">&#xec82;</span
+              ><span class="nav-text">SEARCH</span>
+            </li>
+            <li onclick="showCart()">
+              <span class="icon" id="nav-cart">&#xeed2;</span
+              ><span class="nav-text">CART</span>
+            </li>
+          </ul>
+        </nav>
+        <!--desktop only-->
+        <nav class="navbar">
+          <ul class="cluster navbar-links">
+            <li>MY ACCOUNT</li>
+            <li><img src="/../images/decorations/sparkle1.png" /></li>
+            <li><a href="/../productlisting.html">SHOP</a></li>
+            <li><img src="/../images/decorations/sparkle1.png" /></li>
+            <li>EVENTS</li>
+            <li><img src="/../images/decorations/sparkle1.png" /></li>
+            <li>ART</li>
+            <li><img src="/../images/decorations/sparkle1.png" /></li>
+            <li>VIDEOS</li>
+            <li><img src="/../images/decorations/sparkle1.png" /></li>
+            <li>CONTACT US</li>
+          </ul>
+        </nav>
+      </div>
+
+  
+    <!--breadcrumb-->
+    <div class="breadcrumb desktop-only">
+      <ul class="breadcrumb">
+        <li><a href="/../productlisting.html">Shop</a></li>
+        <li><a href="acoustic.html">Acoustic Guitars</a></li>
+        <li>Taylor 312ce Grand Concert V-Class</li>
+      </ul>
+    </div>
+    <div class="product-margin mobile-only"> </div> 
+    <div class="cart-header-box mobile-only"> 
+      <h2> &lt ACOUSTIC GUITARS</h2>
+    </div>  
+    <!-- product images -->
+    <div class="product-details-container">
+      <!--desktop version-->
+      <div class="product-images desktop-only">
+        <div class="large-image desktop-only">
+          <img id="bigimage" src="../images/products/taylor.png" />  
+        </div>
+        <div class="small-image-group desktop-only">
+          <img src="../images/products/taylor.png" onclick="imageSwap(this)" class="interactive"/> 
+          <img src="../images/products/taylor2.png"onclick="imageSwap(this)" class="interactive" />
+          <img src="../images/products/taylor3.png" onclick="imageSwap(this)" class="interactive">
+        </div>
+      </div>
+      <!--mobile version-->
+      <div class="content">
+      <div class="center-image">
+        <div class="slide-left mobile-only">
+          <input class="interactive" type="button" value="&lt"  onclick="taylorPrev()"/>
+        </div>
+      <div class="product-images2 mobile-only">
+        <div class="main-image">
+          <img id="bigimage-mobile" src="../images/products/taylor.png">
+        </div>
+      </div>
+      <div class="slide-right mobile-only">
+        <input class="interactive" type="button" value=">" onclick="taylorNext()" />
+      </div>
+      </div>
+      <!-- product details -->
+      <div class="product-details">
+        <div class="product-price">
+          <h3>Taylor 312ce Grand Concert V-Class</h1>
+          <h2> $1700</h2>
+        </div>
+
+        <hr class="purple desktop-only" />
+
+        <div class="product-description">
+          <h3 class="desktop-only">Description</h3>
+          <p>The 312ce combines the portable feel of the Grand Concert body with the enhanced sonic power of V-Class bracing. Solid sapele back and sides bring warmth and balance, while a Sitka spruce top adds sparkle and clarity in the treble range. Under the hood, Taylor's new bracing scheme helps this guitar produce surprising volume and incredible sustain with a remarkable soft-touch response, making the 312ce a perfect choice for strummers and fingerpickers alike.</p>
+        </div>
+
+        <hr class="purple desktop-only" />
+
+        <div class="product-specifications desktop-only">
+          <h3>Specifications</h3>   
+          <div class="product-specifications1"> 
+            <div class="product-specifications2">     
+            <li>Scale Length: 24-7/8"</li>
+            <li>Body Width: 15"</li>
+            <li>Body Length: 19 1/2"</li>
+            <li>Body Depth: 4 3/8"</li>
+            <li>Number of Frets: 20</li>
+            <li>Bracing: V-Class Bracing</li>
+            </div>
+          
+          <div class="product-specifications3">  
+            <li>Pickguard: Black</li>
+            <li>Tuners: Taylor Nickel</li>
+            <li>Strings: Phosphor Bronze Light</li>
+            <li>Nut & Saddle: Black Graphite, Micarta saddle</li>
+            <li>Truss Rod Cover: Black Plastic</li>
+            <li>Case: Taylor Deluxe Hardshell Brown</li>
+          </div>  
+          </div>
+        </div>
+
+        <div class="product-add-to-cart">
+          <input type="button" value="ADD TO CART" class="interactive buyable" onclick="showNotif()" />
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    <!--add to cart overlay-->
+    <div id="addcart-div">
+      <iframe id="addcart" src="add-to-cart-notif.html"></iframe>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <div class="footer-div">
+        <!--DESKTOP FOOTERS-->
+        <div class="footer-col desktop-only">
+          <ul>
+            <li><h4>Information</h4></li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+
+        <div class="footer-col desktop-only" style="text-align: center">
+          <ul>
+            <li><h4>Visit Us</h4></li>
+            <li>232 SW 5th Street, Redmond OR</li>
+          </ul>
+          <br />
+          <h4>Contact Us</h4>
+          <span class="icon">&#xef12;</span>
+          <span class="icon">&#xed37;</span>
+          <span class="icon">&#xefbb;</span>
+        </div>
+
+        <div class="footer-col desktop-only" style="text-align: right">
+          <ul>
+            <li><h4>Store Hours</h4></li>
+            <li>Tue - Fri: 10am to 6pm</li>
+            <li>Sat: 10 am to 5pm</li>
+            <li>Sun - Mon: Closed</li>
+          </ul>
+        </div>
+
+        <!--MOBILE FOOTERS-->
+        <div class="footer-col mobile-only">
+          <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>FAQ</li>
+          </ul>
+          <br />
+          <h4>Contact Us</h4>
+          <span class="icon">&#xef12;</span>
+          <span class="icon">&#xed37;</span>
+          <span class="icon">&#xefbb;</span>
+        </div>
+        <div class="footer-col mobile-only" style="text-align: right">
+          <ul>
+            <li><h4>Store Hours</h4></li>
+            <li>Tue - Fri: 10am to 6pm</li>
+            <li>Sat: 10 am to 5pm</li>
+            <li>Sun - Mon: Closed</li>
+            <br />
+            <li>232 SW 5th Street</li>
+            <li>Redmond OR</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
