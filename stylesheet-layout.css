@@ -504,7 +504,8 @@ input[type="button"] {
 }
 
 #bigimage-mobile {
-  height: 50vh;
+  max-height: 50vh;
+  height: auto;
   margin: auto;
 }
 
